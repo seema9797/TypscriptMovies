@@ -1,10 +1,9 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const Form = styled.form`
-display: flex;
-justify-content: center;
-margin: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
 `;
 
 export const BookHeader = styled.h1`
@@ -20,9 +19,8 @@ export const InputBoxStyle = styled.input`
 `;
 
 export const InputIcon = styled.i`
-    position: absolute !important;
-    margin-left: 230px !important;
-    margin-top: 18px;
-    color: #626262;
+  position: absolute !important;
+  margin-left: 230px !important;
+  margin-top: 18px;
+  color: #626262;
 `;
-

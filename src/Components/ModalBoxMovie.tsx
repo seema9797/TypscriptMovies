@@ -1,11 +1,12 @@
-import { type } from '@testing-library/user-event/dist/type';
-import React from 'react'
-import {  ModelMainContainer,
+import { type } from "@testing-library/user-event/dist/type";
+import React from "react";
+import {
+  ModelMainContainer,
   ModelContainer,
   TitleCloseBtn,
   CardSubContainer,
   TitleCloseButton,
-  Cardimg,
+  CardImg,
   HeaderConfirm,
   NumberOfSeats,
   MainCountSeat,
@@ -13,9 +14,9 @@ import {  ModelMainContainer,
   MainDivision,
   DivisionPart,
   MainDivisionLast,
-  DivisionPartLast
-} from "../Styles/Modal.styled"
-  
+  DivisionPartLast,
+} from "../Styles/Modal.styled";
+
 type Props = {
   closeModel?: () => void;
   pathImg?: string;
@@ -27,9 +28,9 @@ const ModalBoxMovie: React.FC<Props> = ({
   selectedSeatBook,
   pathImg,
 }) => {
-    const IMG_URL = "https://image.tmdb.org/t/p/w500";
-    let total = String(selectedSeatBook).length * 250;
-    let SGST = (total * 12) / 100;
+  const IMG_URL = "https://image.tmdb.org/t/p/w500";
+  let total = String(selectedSeatBook).length * 250;
+  let SGST = (total * 12) / 100;
 
   return (
     <ModelMainContainer>
@@ -39,9 +40,9 @@ const ModalBoxMovie: React.FC<Props> = ({
         </TitleCloseBtn>
         <HeaderConfirm>Confirm book</HeaderConfirm>
         <CardSubContainer>
-          <Cardimg>
+          <CardImg>
             <img src={IMG_URL + pathImg} alt="error" className="setSizeImg" />
-          </Cardimg>
+          </CardImg>
           <MainCountSeat>
             <Seats>Seats:</Seats>
             <NumberOfSeats>
@@ -72,4 +73,4 @@ const ModalBoxMovie: React.FC<Props> = ({
   );
 };
 
-export default ModalBoxMovie
+export default ModalBoxMovie;

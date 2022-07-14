@@ -1,12 +1,11 @@
-import React from 'react';
-import MovieMain from './Components/MovieMain';
+import React from "react";
+import MovieMain from "./Components/MovieMain";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
-import MovieSeats from './Components/MovieSeats';
-import SearchMovie from './Components/SearchMovie';
-import ModalBoxMovie from './Components/ModalBoxMovie';
-
+import MovieSeats from "./Components/MovieSeats";
+import SearchMovie from "./Components/SearchMovie";
+import ModalBoxMovie from "./Components/ModalBoxMovie";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,31 +16,28 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-
 type BoxProps = {
-  children: React.ReactNode; // 👈️ type children
+  children: React.ReactNode;
 };
 
 function App() {
   return (
-    <GlobalStyle>
-      <Router>
-        <Switch>
-          <Route path="/MovieSeats">
-            <MovieSeats />
-          </Route>
-          <Route path="/ModalBoxMovie/">
-            <ModalBoxMovie />
-          </Route>
-          <Route path="/SearchMovie">
-            <SearchMovie />
-          </Route>
-          <Route exact path="/">
-            <MovieMain />
-          </Route>
-        </Switch>
-      </Router>
-    </GlobalStyle>
+    <Router>
+      <Switch>
+        <Route path="/MovieSeats">
+          <MovieSeats />
+        </Route>
+        <Route path="/ModalBoxMovie/">
+          <ModalBoxMovie />
+        </Route>
+        <Route path="/SearchMovie">
+          <SearchMovie />
+        </Route>
+        <Route exact path="/">
+          <MovieMain />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

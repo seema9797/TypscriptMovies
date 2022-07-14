@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const MainBtn = styled.div`
   display: flex;
   justify-content: center;
@@ -41,7 +40,7 @@ export const ModelContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 25px;
-  z-index:2;
+  z-index: 2;
 `;
 export const TitleCloseBtn = styled.div`
   display: flex;
@@ -57,42 +56,42 @@ export const TitleCloseButton = styled.button`
   cursor: pointer;
 `;
 export const HeaderConfirm = styled.h1`
-    align-items: center;
-    margin-left:200px
+  align-items: center;
+  margin-left: 200px;
 `;
 export const MainCountSeat = styled.div`
-margin-right:100px;
-line-height:10px
-`
+  margin-right: 100px;
+  line-height: 10px;
+`;
 export const NumberOfSeats = styled.p`
-display:flex;
-justify-content:space-between
-`
+  display: flex;
+  justify-content: space-between;
+`;
 export const CardSubContainer = styled.div`
-display:flex;
-justify-content:space-between
+  display: flex;
+  justify-content: space-between;
 `;
 
-export const Cardimg = styled.div`
+export const CardImg = styled.div`
   .setSizeImg {
     width: 200px;
   }
 `;
 export const MainDivision = styled.div`
-display:flex;
-justify-content:space-between
-`
+  display: flex;
+  justify-content: space-between;
+`;
 export const DivisionPart = styled.p`
-color:grey;
-`
+  color: grey;
+`;
 export const MainDivisionLast = styled.div`
-display:flex;
-justify-content:space-between;
-border-top:1px solid black;
-margin-top:10px;
-color:black;
-`
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  color: black;
+`;
 export const DivisionPartLast = styled.p`
-color:black;
-font-weight:bold;
-`
+  color: black;
+  font-weight: bold;
+`;

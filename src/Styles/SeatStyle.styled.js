@@ -1,22 +1,18 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const MainSeatDiv = styled.div`
   display: flex;
   justify-content: center;
-  margin-top:60px;
+  margin-top: 60px;
 `;
 export const SeatContainer = styled.div`
-width:1200px;
-display: flex;
-justify-content: center;
-margin-left:300px;
-margin-top:60px;
-
-`
-export const SeatVactor = styled.img`
-
-
-`
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+  margin-top: 60px;
+`;
+export const SeatVector = styled.img``;
 export const SeatMulti = styled.div`
   display: flex;
   justify-content: center;

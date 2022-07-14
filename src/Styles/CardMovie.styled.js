@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const HeaderMovie = styled.h1`
   font-size: 48px;
   line-height: 63px;
@@ -12,11 +11,19 @@ export const HeaderMovie = styled.h1`
 export const DisplayImages = styled.div`
   width: 80%;
   margin: 50px 170px auto;
-  justify-content:center;
+  justify-content: center;
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 60px;
+  @media screen and (max-width: 800px) {
+    margin: 50px 70px auto;
+  }
+`;
+export const SubContain = styled.div`
+  justify-content: "center";
+  align-items: "center";
+  display: none;
 `;
 
 export const SubMainCard = styled.img`
@@ -29,11 +36,11 @@ export const SubMainCard = styled.img`
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.25);
+  &:hover ${SubContain} {
+    display: block;
+  }
 `;
-export const SubContain = styled.div`
-justify-content: 'center';
-align-items: 'center'
- `
+
 export const ButtonShowMore = styled.button`
   position: absolute;
   margin: 270px -100px 100px;
