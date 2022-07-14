@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import {
   SeatVector,
   MainSeatDiv,
@@ -17,7 +17,7 @@ import ModalBoxMovie from "./ModalBoxMovie";
 function MovieSeats() {
   const [SeatBook, setSeatBook] = useState(data);
   const [selectedSeatBook, setSelectedSeatBook] = useState<string[]>([]);
-  const [DisplayModel, setDisplayModal] = useState(true);
+  const [DisplayModel, setDisplayModal] = useState(false);
   const location = useLocation<LocationState>();
 
   interface LocationState {

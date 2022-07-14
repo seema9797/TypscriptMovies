@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MainBtn = styled.div`
   display: flex;
   justify-content: center;
+  margin-top:20px;
 `;
 export const ConfirmBtn = styled.button`
   font-size: 16px;
@@ -32,8 +33,8 @@ export const ModelMainContainer = styled.div`
   align-items: center;
 `;
 export const ModelContainer = styled.div`
-  width: 600px;
-  height: 500px;
+  width: 640px;
+  height: 578px;
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -56,12 +57,14 @@ export const TitleCloseButton = styled.button`
   cursor: pointer;
 `;
 export const HeaderConfirm = styled.h1`
-  align-items: center;
-  margin-left: 200px;
+display:flex;
+justify-content: center;
 `;
 export const MainCountSeat = styled.div`
-  margin-right: 100px;
+  margin-right: 40px;
   line-height: 10px;
+  width:300px;
+  margin-top: 10px;
 `;
 export const NumberOfSeats = styled.p`
   display: flex;
@@ -75,14 +78,28 @@ export const CardSubContainer = styled.div`
 export const CardImg = styled.div`
   .setSizeImg {
     width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 326.35px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.25);
   }
 `;
 export const MainDivision = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+export const HeaderFive = styled.h5`
+display: flex;
+justify-content:center;
+`
+export const DivisionPartHead = styled.h5`
+color:black
+`
 export const DivisionPart = styled.p`
-  color: grey;
+
 `;
 export const MainDivisionLast = styled.div`
   display: flex;

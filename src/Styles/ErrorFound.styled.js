@@ -14,4 +14,6 @@ export const MainErrorDiv = styled.div`
 `;
 export const ErrorImg = styled.img`
   justify-content: center;
+  width: 620px;
+  height: 447px;
 `;

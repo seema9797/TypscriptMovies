@@ -23,7 +23,6 @@ export const DisplayImages = styled.div`
 export const SubContain = styled.div`
   justify-content: "center";
   align-items: "center";
-  display: none;
 `;
 
 export const SubMainCard = styled.img`
@@ -56,6 +55,10 @@ export const ButtonShowMore = styled.button`
   align-items: center;
   transition: all 0.4s ease 0s;
   z-index: 1;
+
+  &:hover {
+    background-color: #724fd8;
+  }
 `;
 export const MovieTitle = styled.h3`
   position: absolute;
@@ -67,5 +70,5 @@ export const MovieTitle = styled.h3`
   z-index: 2;
   align-items: center;
   color: black;
-  margin: 130px 50px 100px;
+  margin: 130px 60px 100px;
 `;

@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
 import {
   ModelMainContainer,
@@ -15,6 +14,8 @@ import {
   DivisionPart,
   MainDivisionLast,
   DivisionPartLast,
+  HeaderFive,
+  DivisionPartHead,
 } from "../Styles/Modal.styled";
 
 type Props = {
@@ -38,7 +39,8 @@ const ModalBoxMovie: React.FC<Props> = ({
         <TitleCloseBtn>
           <TitleCloseButton onClick={closeModel}>x</TitleCloseButton>
         </TitleCloseBtn>
-        <HeaderConfirm>Confirm book</HeaderConfirm>
+        <HeaderConfirm>Thank you for booking</HeaderConfirm>
+        <HeaderFive>Order Summary</HeaderFive>
         <CardSubContainer>
           <CardImg>
             <img src={IMG_URL + pathImg} alt="error" className="setSizeImg" />
@@ -51,8 +53,10 @@ const ModalBoxMovie: React.FC<Props> = ({
               })}{" "}
             </NumberOfSeats>
             <MainDivision>
-              <DivisionPart>{selectedSeatBook?.length} * 250:</DivisionPart>
-              <DivisionPart>{total}</DivisionPart>
+              <DivisionPartHead>
+                {selectedSeatBook?.length} * 250:
+              </DivisionPartHead>
+              <DivisionPartHead>{total}</DivisionPartHead>
             </MainDivision>
             <MainDivision>
               <DivisionPart>SGST 12% </DivisionPart>
